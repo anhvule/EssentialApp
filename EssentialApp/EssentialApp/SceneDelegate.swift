@@ -48,6 +48,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 			imageLoader: makeLocalImageLoaderWithRemoteFallback,
 			selection: showComments))
 	
+	
 	convenience init(httpClient: HTTPClient, store: FeedStore & FeedImageDataStore, scheduler: AnyDispatchQueueScheduler) {
 		self.init()
 		self.httpClient = httpClient
